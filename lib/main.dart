@@ -19,8 +19,7 @@ void main() async {
   var initializationSettings = InitializationSettings(
       android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
   await flutterLocalNotificationsPlugin.initialize(initializationSettings,
-      onSelectNotification: (String payload) async {
-  });
+      onSelectNotification: (String payload) async {});
   runApp(const MyApp());
 }
 
